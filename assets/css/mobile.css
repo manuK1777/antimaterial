@@ -1,0 +1,53 @@
+/* ── Mobile / Responsive ──────────────────────── */
+@media (max-width: 900px) {
+  :root { --nav-h: 60px; }
+
+  nav { padding: 0 20px; }
+  .nav-links {
+    display: none; flex-direction: column;
+    position: fixed; top: 60px; left: 0; right: 0;
+    background: var(--white); padding: 30px 24px; gap: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    z-index: 99;
+  }
+  .nav-links.open { display: flex; }
+  .hamburger { display: block; }
+  .top-bar { padding: 6px 20px; }
+
+  .hero-content { padding: 60px 24px 70px; }
+
+  .welcome {
+    grid-template-columns: 1fr;
+    padding: var(--section-pad) 24px;
+    gap: 40px;
+  }
+  .welcome-img::after { display: none; }
+
+  .services { padding: var(--section-pad) 24px; }
+  .services-grid { grid-template-columns: 1fr; gap: 2px; }
+
+  .bio {
+    grid-template-columns: 1fr;
+    padding: var(--section-pad) 24px;
+    gap: 40px;
+  }
+  .bio-img .img-badge { left: 16px; }
+
+  .why {
+    grid-template-columns: 1fr;
+    padding: var(--section-pad) 24px;
+    gap: 40px;
+  }
+
+  .services-list { padding: var(--section-pad) 24px; }
+  .list-grid { grid-template-columns: 1fr; }
+
+  .cta-banner { padding: 60px 24px; }
+
+  footer { padding: 50px 24px 30px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+
+  .page-hero { padding: 80px 24px 60px; }
+  .page-content { padding: var(--section-pad) 24px; }
+}
