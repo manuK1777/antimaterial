@@ -1,3 +1,6 @@
+const copyYear = document.getElementById('copy-year');
+if (copyYear) copyYear.textContent = new Date().getFullYear();
+
 // ── Language switcher ─────────────────────────
 function setLang(lang) {
   document.body.setAttribute('data-active-lang', lang);
