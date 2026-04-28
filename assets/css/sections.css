@@ -176,7 +176,7 @@
 
 /* ── Why Antimaterial ─────────────────────────── */
 .why {
-  background: var(--dark);
+  background: var(--cream);
   padding: var(--section-pad) 80px;
   display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
   align-items: center;
@@ -184,12 +184,12 @@
 .why-text h2 {
   font-family: var(--font-display);
   font-size: clamp(32px, 4vw, 50px);
-  font-weight: 300; color: var(--white);
+  font-weight: 300; color: var(--dark);
   margin-bottom: 28px; line-height: 1.15;
 }
-.why-text h2 em { font-style: italic; color: var(--stone); }
+.why-text h2 em { font-style: italic; color: var(--taupe); }
 .why-text p {
-  color: rgba(255,255,255,.62);
+  color: var(--taupe);
   line-height: 1.9; margin-bottom: 18px;
   font-size: 15px;
 }
@@ -199,14 +199,14 @@
   text-underline-offset: 3px;
   transition: color .2s;
 }
-.why-text p a:hover { color: var(--white); }
+.why-text p a:hover { color: var(--dark); }
 .why-visual {
   display: flex; align-items: center; justify-content: center;
 }
 .why-quote {
   border-left: 2px solid var(--accent);
   padding: 32px 40px;
-  background: rgba(255,255,255,.04);
+  background: var(--warm-bg);
 }
 .why-quote p {
   font-family: var(--font-display);
