@@ -1,3 +1,8 @@
+/* ── Sticky header wrapper ───────────────────── */
+.site-header {
+  position: sticky; top: 0; z-index: 200;
+}
+
 /* ── Top Bar ──────────────────────────────────── */
 .top-bar {
   background: var(--dark);
@@ -30,7 +35,7 @@
 
 /* ── Navigation ───────────────────────────────── */
 nav {
-  position: sticky; top: 0; z-index: 100;
+  position: relative; z-index: 100;
   background: var(--white);
   height: var(--nav-h);
   display: flex; align-items: center;
