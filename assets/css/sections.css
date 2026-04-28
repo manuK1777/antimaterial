@@ -193,6 +193,13 @@
   line-height: 1.9; margin-bottom: 18px;
   font-size: 15px;
 }
+.why-text p a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color .2s;
+}
+.why-text p a:hover { color: var(--white); }
 .why-visual {
   display: flex; align-items: center; justify-content: center;
 }
@@ -239,9 +246,13 @@
   font-size: 20px; color: var(--white);
   margin-bottom: 8px; font-weight: 400;
 }
-.list-item p {
+.list-item p,
+.list-item ul {
   font-size: 14px; color: rgba(255,255,255,.5);
   line-height: 1.7;
+}
+.list-item ul {
+  padding-left: 16px;
 }
 .list-item a {
   display: inline-block; margin-top: 14px;
