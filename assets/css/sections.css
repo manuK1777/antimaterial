@@ -32,12 +32,12 @@
 }
 .hero-eyebrow {
   font-family: var(--font-body);
-  font-size: 15px; letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--stone); margin-bottom: 18px;
+  font-size: 16px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: #e0d0bc; margin-bottom: 18px;
   display: flex; align-items: center; gap: 12px;
 }
 .hero-eyebrow::before {
-  content: ''; display: block; width: 40px; height: 1px; background: var(--stone);
+  content: ''; display: block; width: 40px; height: 1px; background: #e0d0bc;
 }
 .hero h1 {
   font-family: var(--font-display);
@@ -73,7 +73,7 @@
 .welcome-text p {
   color: var(--taupe); line-height: 1.85; margin-bottom: 20px;
 }
-.welcome-text .btn-dark { margin-top: 8px; }
+.welcome-text .btn-dark { display: block; width: fit-content; margin: 16px auto 0; }
 .welcome-img { position: relative; }
 .welcome-img img {
   width: 100%; height: 480px; object-fit: cover;
@@ -132,7 +132,7 @@
 .service-card .card-link {
   display: inline-block; margin-top: 20px;
   font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--accent); border-bottom: 1px solid transparent;
+  color: #188e5a; border-bottom: 1px solid transparent;
   transition: border-color .2s;
 }
 .service-card:hover .card-link { border-bottom-color: var(--accent); }
@@ -248,7 +248,7 @@
 }
 .list-item p,
 .list-item ul {
-  font-size: 14px; color: rgba(255,255,255,.5);
+  font-size: 14px; color: #ffffffa3;
   line-height: 1.7;
 }
 .list-item ul {
@@ -283,7 +283,7 @@
 footer {
   background: var(--dark);
   padding: 70px 80px 40px;
-  color: rgba(255,255,255,.45);
+  color: rgba(255,255,255,.69);
 }
 .footer-grid {
   display: grid; grid-template-columns: 2fr 1fr 1fr;
@@ -302,17 +302,17 @@ footer {
   margin-top: 20px; font-size: 14px; line-height: 2;
 }
 .footer-brand .contact-info a {
-  color: var(--stone); transition: color .2s;
+  color: #aa8c63; transition: color .2s;
 }
 .footer-brand .contact-info a:hover { color: var(--white); }
 .footer-col h4 {
-  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--stone); margin-bottom: 20px; font-weight: 400;
+  font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #aa8c63; margin-bottom: 20px; font-weight: 400;
 }
 .footer-col ul { list-style: none; }
 .footer-col ul li { margin-bottom: 10px; }
 .footer-col ul li a {
-  font-size: 13px; color: rgba(255,255,255,.45);
+  font-size: 14px; color: rgba(255,255,255,.45);
   transition: color .2s;
 }
 .footer-col ul li a:hover { color: var(--white); }
@@ -324,7 +324,7 @@ footer {
 }
 .social-link {
   display: flex; align-items: center; gap: 8px;
-  color: rgba(255,255,255,.45); transition: color .2s;
+  color:aa8c63; transition: color .2s;
 }
 .social-link:hover { color: var(--white); }
 .social-link svg { width: 18px; height: 18px; }
@@ -346,11 +346,11 @@ footer {
 .page-hero-content { position: relative; z-index: 1; max-width: 680px; }
 .page-hero-eyebrow {
   font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--accent); margin-bottom: 16px;
+  color: #a8c8b8; margin-bottom: 16px;
   display: flex; align-items: center; gap: 12px;
 }
 .page-hero-eyebrow::before {
-  content: ''; display: block; width: 32px; height: 1px; background: var(--accent);
+  content: ''; display: block; width: 32px; height: 1px; background: #a8c8b8;
 }
 .page-hero h1 {
   font-family: var(--font-display);
