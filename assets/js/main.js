@@ -1,6 +1,15 @@
 const copyYear = document.getElementById('copy-year');
 if (copyYear) copyYear.textContent = new Date().getFullYear();
 
+// Highlight current page in nav with btn-nav class (only one active at a time)
+const currentPage = location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.classList.remove('btn-nav');
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('btn-nav');
+  }
+});
+
 // ── Language switcher ─────────────────────────
 function setLang(lang) {
   document.body.setAttribute('data-active-lang', lang);
