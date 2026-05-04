@@ -332,7 +332,7 @@ footer {
 /* ── Inner Page Hero (shared by sub-pages) ────── */
 .page-hero {
   background: var(--dark);
-  padding: 100px 80px 80px;
+  padding: 700px 80px 80px;
   position: relative;
   overflow: hidden;
 }
@@ -340,8 +340,8 @@ footer {
   content: '';
   position: absolute; inset: 0;
   background-image: var(--page-hero-img, none);
-  background-size: cover; background-position: center;
-  opacity: 0.18;
+  background-size: 100% auto; background-position: center;
+  opacity: 0.50;
 }
 .page-hero-content { position: relative; z-index: 1; max-width: 680px; }
 .page-hero-eyebrow {
@@ -358,9 +358,9 @@ footer {
   font-weight: 300; color: var(--white);
   line-height: 1.1; margin-bottom: 20px;
 }
-.page-hero h1 em { font-style: italic; color: var(--stone); }
+.page-hero h1 em { font-style: italic; color: #bf945a; }
 .page-hero-sub {
-  font-size: 16px; color: rgba(255,255,255,.7);
+  font-size: 17px; color: rgba(255,255,255,.7);
   max-width: 520px; line-height: 1.8;
 }
 
@@ -368,6 +368,7 @@ footer {
 .page-content {
   padding: var(--section-pad) 80px;
   max-width: 860px;
+  margin: 0 auto;
 }
 .page-content h2 {
   font-family: var(--font-display);
