@@ -332,7 +332,8 @@ footer {
 /* ── Inner Page Hero (shared by sub-pages) ────── */
 .page-hero {
   background: var(--dark);
-  padding: 700px 80px 80px;
+  min-height: 88vh;
+  display: flex; align-items: flex-end;
   position: relative;
   overflow: hidden;
 }
@@ -340,10 +341,21 @@ footer {
   content: '';
   position: absolute; inset: 0;
   background-image: var(--page-hero-img, none);
-  background-size: 100% auto; background-position: center;
-  opacity: 0.50;
+  background-size: cover; background-position: center 30%;
+  transform-origin: center;
+  animation: heroZoom 18s ease-in-out infinite alternate;
 }
-.page-hero-content { position: relative; z-index: 1; max-width: 680px; }
+.page-hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(20,18,15,.18) 0%,
+    rgba(20,18,15,.52) 60%,
+    rgba(20,18,15,.75) 100%
+  );
+}
+.page-hero-content { position: relative; z-index: 2; max-width: 740px; padding: 80px 80px 90px; }
 .page-hero-eyebrow {
   font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
   color: #a8c8b8; margin-bottom: 16px;
@@ -354,14 +366,16 @@ footer {
 }
 .page-hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: clamp(52px, 8vw, 90px);
   font-weight: 300; color: var(--white);
-  line-height: 1.1; margin-bottom: 20px;
+  line-height: 1.1; margin-bottom: 28px;
+  letter-spacing: 0.01em;
 }
-.page-hero h1 em { font-style: italic; color: #bf945a; }
+.page-hero h1 em { font-style: italic; color: var(--stone); }
 .page-hero-sub {
-  font-size: 17px; color: rgba(255,255,255,.7);
-  max-width: 520px; line-height: 1.8;
+  font-size: 16px; color: rgba(255,255,255,.78);
+  max-width: 480px; line-height: 1.8;
+  margin-bottom: 40px;
 }
 
 /* ── Inner Page Content ───────────────────────── */
