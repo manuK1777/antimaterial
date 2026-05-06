@@ -13,7 +13,6 @@ antimaterial/
 ├── index.html               # Homepage
 ├── lyhytterapia.html        # Brief therapy
 ├── stressi.html             # Stress & Burnout
-├── muutosturva.html         # Change protection
 ├── filosofinen.html         # Philosophical consultation
 ├── aanimalja.html           # Singing bowls
 ├── blogi.html               # Blog (placeholder)
