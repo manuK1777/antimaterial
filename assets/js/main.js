@@ -3,9 +3,14 @@ if (copyYear) copyYear.textContent = new Date().getFullYear();
 
 // Highlight current page in nav with btn-nav class (only one active at a time)
 const currentPage = location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.nav-links a').forEach(link => {
+document.querySelectorAll('.nav-links > li > a').forEach(link => {
   link.classList.remove('btn-nav');
-  if (link.getAttribute('href') === currentPage) {
+  const parentLi = link.closest('li');
+  const isDropdown = parentLi && parentLi.classList.contains('nav-dropdown');
+  if (isDropdown) {
+    const activeChild = parentLi.querySelector(`.dropdown-menu a[href="${currentPage}"]`);
+    if (activeChild) link.classList.add('btn-nav');
+  } else if (link.getAttribute('href') === currentPage) {
     link.classList.add('btn-nav');
   }
 });
