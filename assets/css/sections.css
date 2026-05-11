@@ -417,6 +417,7 @@ footer {
   display: flex; align-items: flex-start;
   gap: 14px; margin-bottom: 24px;
 }
+.contact-detail:first-of-type { margin-top: 42px; }
 .contact-detail-icon {
   width: 20px; height: 20px;
   color: var(--accent); flex-shrink: 0; margin-top: 2px;
