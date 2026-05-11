@@ -52,7 +52,7 @@ nav {
   margin-right: auto;
   text-transform: uppercase;
 }
-.nav-logo span { color: var(--accent); }
+/* .nav-logo span { color: var(--accent); } */
 
 .nav-links {
   display: flex; align-items: center; gap: 32px;
