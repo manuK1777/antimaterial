@@ -52,4 +52,5 @@
   .page-content { padding: var(--section-pad) 24px; }
 
   .contact-section { grid-template-columns: 1fr; padding: var(--section-pad) 24px; gap: 48px; }
+  .contact-icon-illustration { display: none; }
 }
