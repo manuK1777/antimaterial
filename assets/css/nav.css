@@ -51,6 +51,8 @@ nav {
   color: var(--dark);
   margin-right: auto;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 /* .nav-logo span { color: var(--accent); } */
 
