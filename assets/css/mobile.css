@@ -48,7 +48,8 @@
   .footer-grid { grid-template-columns: 1fr; gap: 40px; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
 
-  .page-hero { padding: 80px 24px 60px; }
+  .page-hero { padding: 0; }
+  .page-hero-content { padding: 60px 24px 70px; }
   .page-content { padding: var(--section-pad) 24px; }
 
   .contact-section { grid-template-columns: 1fr; padding: var(--section-pad) 24px; gap: 48px; }
