@@ -32,6 +32,7 @@
     gap: 40px;
   }
   .bio-img .img-badge { left: 16px; }
+  .bio-text .btn-dark { display: block; width: fit-content; margin: 10px auto 0; }
 
   .why {
     grid-template-columns: 1fr;
