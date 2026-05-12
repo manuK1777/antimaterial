@@ -337,10 +337,8 @@ footer {
   position: relative;
   overflow: hidden;
 }
-.page-hero::before {
-  content: '';
+.page-hero-bg {
   position: absolute; inset: 0;
-  background-image: var(--page-hero-img, none);
   background-size: cover; background-position: center 30%;
   transform-origin: center;
   animation: heroZoom 18s ease-in-out infinite alternate;
