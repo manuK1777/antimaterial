@@ -48,6 +48,7 @@
   footer { padding: 50px 24px 30px; }
   .footer-grid { grid-template-columns: 1fr; gap: 40px; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .dev-brand { font-size: 0.85rem; margin-top: 8px; }
 
   .page-hero { padding: 0; }
   .page-hero-content { padding: 60px 24px 70px; }
