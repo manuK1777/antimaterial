@@ -3,15 +3,24 @@ if (copyYear) copyYear.textContent = new Date().getFullYear();
 
 // Highlight current page in nav with btn-nav class (only one active at a time)
 const currentPage = location.pathname.split('/').pop() || 'index.html';
+// Normalize: remove .html extension if present for flexible matching
+const currentPageNorm = currentPage.replace(/\.html$/, '');
 document.querySelectorAll('.nav-links > li > a').forEach(link => {
   link.classList.remove('btn-nav');
   const parentLi = link.closest('li');
   const isDropdown = parentLi && parentLi.classList.contains('nav-dropdown');
   if (isDropdown) {
-    const activeChild = parentLi.querySelector(`.dropdown-menu a[href="${currentPage}"]`);
+    const activeChild = parentLi.querySelector(`.dropdown-menu a[href="${currentPage}"]`) ||
+                        parentLi.querySelector(`.dropdown-menu a[href="${currentPageNorm}"]`) ||
+                        parentLi.querySelector(`.dropdown-menu a[href="${currentPage.replace('.html', '')}.html"]`);
     if (activeChild) link.classList.add('btn-nav');
-  } else if (link.getAttribute('href') === currentPage) {
-    link.classList.add('btn-nav');
+  } else {
+    const linkHref = link.getAttribute('href');
+    const linkHrefNorm = linkHref.replace(/\.html$/, '');
+    // Match both with and without .html extension
+    if (linkHref === currentPage || linkHrefNorm === currentPageNorm) {
+      link.classList.add('btn-nav');
+    }
   }
 });
 
