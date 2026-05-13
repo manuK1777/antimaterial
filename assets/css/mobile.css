@@ -53,6 +53,6 @@
   .page-hero-content { padding: 60px 24px 70px; }
   .page-content { padding: var(--section-pad) 24px; }
 
-  .contact-section { grid-template-columns: 1fr; padding: var(--section-pad) 24px; gap: 48px; }
-  .contact-icon-illustration { display: none; }
+  .contact-section { grid-template-columns: 1fr; padding: var(--section-pad) 24px; gap: 40px; }
+  .contact-img::after { display: none; }
 }
