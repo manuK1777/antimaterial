@@ -1,513 +1,997 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Antimaterial – Kristiina Salo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/nav.css" />
-  <link rel="stylesheet" href="assets/css/sections.css" />
-  <link rel="stylesheet" href="assets/css/mobile.css" />
-  <link rel="icon" type="image/svg+xml" href="assets/img/antimaterial_A.svg" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antimaterial – Kristiina Salo</title>
 
-<body data-active-lang="fi">
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Lyhytterapiaa, filosofista konsultaatiota ja äänimaljahoitoja Helsingissä. Tukea stressiin, työuupumukseen ja elämänmuutoksiin. Kristiina Salo, lyhytterapeutti."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="lyhytterapia, terapia, stressi, uupumus, filosofinen konsultaatio, äänimaljat, äänimaljahoito, Helsinki, Kristiina Salo, antimaterial"
+    />
+    <meta name="author" content="Kristiina Salo" />
 
-  <header class="site-header">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://antimaterial.fi/" />
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="lang-switcher">
-      <button class="active" data-lang-btn="fi" onclick="setLang('fi')">FI</button>
-      <button data-lang-btn="en" onclick="setLang('en')">EN</button>
-      <button data-lang-btn="sv" onclick="setLang('sv')">SV</button>
-    </div>
-  </div>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Antimaterial – Kristiina Salo" />
+    <meta
+      property="og:description"
+      content="Lyhytterapiaa, filosofista konsultaatiota ja äänimaljahoitoja Helsingissä. Tukea stressiin, työuupumukseen ja elämänmuutoksiin."
+    />
+    <meta property="og:url" content="https://antimaterial.fi/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Antimaterial" />
+    <meta property="og:locale" content="fi_FI" />
+    <meta
+      property="og:image"
+      content="https://antimaterial.fi/assets/img/welcome.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html" class="nav-logo">
-      <img src="assets/img/antimaterial_A.svg" alt="Antimaterial logo" style="width: 22px; height: 22px; margin-right: 4px;" />
-      Antimaterial
-    </a>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="nav-links">
-      <li>
-        <a href="index.html">
-          <span data-lang="fi">Etusivu</span>
-          <span data-lang="en">Home</span>
-          <span data-lang="sv">Hem</span>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Antimaterial – Kristiina Salo" />
+    <meta
+      name="twitter:description"
+      content="Lyhytterapiaa, filosofista konsultaatiota ja äänimaljahoitoja Helsingissä. Tukea stressiin, työuupumukseen ja elämänmuutoksiin."
+    />
+    <meta
+      name="twitter:image"
+      content="https://antimaterial.fi/assets/img/welcome.jpg"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/sections.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/img/antimaterial_A_favicon.svg"
+    />
+  </head>
+
+  <body data-active-lang="fi">
+    <header class="site-header">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <div class="lang-switcher">
+          <button class="active" data-lang-btn="fi" onclick="setLang('fi')">
+            FI
+          </button>
+          <button data-lang-btn="en" onclick="setLang('en')">EN</button>
+          <button data-lang-btn="sv" onclick="setLang('sv')">SV</button>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <a href="index.html" class="nav-logo">
+          <img
+            src="assets/img/antimaterial_A.svg"
+            alt="Antimaterial logo"
+            style="width: 22px; height: 22px; margin-right: 4px"
+          />
+          Antimaterial
         </a>
-      </li>
-      <li>
-        <a href="lyhytterapia.html">
-          <span data-lang="fi">Lyhytterapia</span>
-          <span data-lang="en">Brief therapy</span>
-          <span data-lang="sv">Korttidsterapi</span>
-        </a>
-      </li>
-      <li>
-        <a href="stressi.html">
-          <span data-lang="fi">Stressi &amp; Työuupumus</span>
-          <span data-lang="en">Stress &amp; Burnout</span>
-          <span data-lang="sv">Stress och utbrändhet</span>
-        </a>
-      </li>
-      <li>
-        <a href="muutosturva.html">
-          <span data-lang="fi">Muutosturva</span>
-          <span data-lang="en">Life changes</span>
-          <span data-lang="sv">Livsförändring</span>
-        </a>
-      </li>
-      <li class="nav-dropdown">
-        <a href="#">
-          <span data-lang="fi">Palvelut</span>
-          <span data-lang="en">Services</span>
-          <span data-lang="sv">Tjänster</span>
-        </a>
-        <ul class="dropdown-menu">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
           <li>
-            <a href="filosofinen.html">
-              <span data-lang="fi">Filosofinen konsultaatio</span>
-              <span data-lang="en">Philosophical consultation</span>
-              <span data-lang="sv">Filosofisk konsultation</span>
+            <a href="index.html">
+              <span data-lang="fi">Etusivu</span>
+              <span data-lang="en">Home</span>
+              <span data-lang="sv">Hem</span>
             </a>
           </li>
           <li>
-            <a href="aanimalja.html">
-              <span data-lang="fi">Äänimaljat</span>
-              <span data-lang="en">Singing bowls</span>
-              <span data-lang="sv">Sjungande skålar</span>
+            <a href="lyhytterapia.html">
+              <span data-lang="fi">Lyhytterapia</span>
+              <span data-lang="en">Brief therapy</span>
+              <span data-lang="sv">Korttidsterapi</span>
+            </a>
+          </li>
+          <li>
+            <a href="stressi.html">
+              <span data-lang="fi">Stressi &amp; Työuupumus</span>
+              <span data-lang="en">Stress &amp; Burnout</span>
+              <span data-lang="sv">Stress och utbrändhet</span>
+            </a>
+          </li>
+          <li>
+            <a href="muutosturva.html">
+              <span data-lang="fi">Muutosturva</span>
+              <span data-lang="en">Life changes</span>
+              <span data-lang="sv">Livsförändring</span>
+            </a>
+          </li>
+          <li class="nav-dropdown">
+            <a href="#">
+              <span data-lang="fi">Palvelut</span>
+              <span data-lang="en">Services</span>
+              <span data-lang="sv">Tjänster</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="filosofinen.html">
+                  <span data-lang="fi">Filosofinen konsultaatio</span>
+                  <span data-lang="en">Philosophical consultation</span>
+                  <span data-lang="sv">Filosofisk konsultation</span>
+                </a>
+              </li>
+              <li>
+                <a href="aanimalja.html">
+                  <span data-lang="fi">Äänimaljat</span>
+                  <span data-lang="en">Singing bowls</span>
+                  <span data-lang="sv">Sjungande skålar</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="yhteystiedot.html">
+              <span data-lang="fi">Ota yhteyttä</span>
+              <span data-lang="en">Contact us</span>
+              <span data-lang="sv">Kontakta oss</span>
             </a>
           </li>
         </ul>
-      </li>
-      <li>
-        <a href="yhteystiedot.html">
+      </nav>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content fade-in">
+        <div class="hero-eyebrow">Kristiina Salo</div>
+
+        <h1 data-lang="fi">Lyhytterapia</h1>
+        <h1 data-lang="en">Brief therapy</h1>
+        <h1 data-lang="sv">Korttidsterapi</h1>
+
+        <div class="hero-ctas">
+          <a href="yhteystiedot.html" class="btn-primary">
+            <span data-lang="fi">Ota yhteyttä</span>
+            <span data-lang="en">Contact Us</span>
+            <span data-lang="sv">Kontakta oss</span>
+          </a>
+          <a href="#services" class="btn-ghost">
+            <span data-lang="fi">Tutustu palveluihin</span>
+            <span data-lang="en">Explore services</span>
+            <span data-lang="sv">Utforska tjänster</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELCOME -->
+    <section class="welcome">
+      <div class="welcome-text fade-in">
+        <h2 data-lang="fi">
+          Tervetuloa – <em>Ota ensimmäinen askel kohti parempaa oloa</em>
+        </h2>
+        <h2 data-lang="en">
+          Welcome – <em>Take the first step towards feeling better</em>
+        </h2>
+        <h2 data-lang="sv">
+          Välkommen – <em>Ta det första steget mot att må bättre</em>
+        </h2>
+
+        <p data-lang="fi">
+          Tuntuuko, että ajatukset pyörivät kehää etkä löydä ulospääsyä? Onko
+          stressi, ahdistus, jaksamisen haasteet tai elämän muutostilanteet
+          alkaneet painaa liikaa? Et ole yksin – ja apua on saatavilla.
+          Tarjoamme lyhytterapian lisäksi filosofista konsultaatiota ja
+          äänimaljahoitoja.
+        </p>
+        <p data-lang="en">
+          Do you feel like your thoughts are going in circles and you can't find
+          a way out? Have stress, anxiety, coping challenges, or life-changing
+          situations started to weigh you down too much? You are not alone – and
+          help is available. In addition to brief therapy, we offer
+          philosophical consultation and singing bowl treatments.
+        </p>
+        <p data-lang="sv">
+          Känner du att dina tankar snurrar i cirklar och att du inte hittar
+          någon väg ut? Har stress, ångest, utmaningar med att hantera problem
+          eller livsförändrande situationer börjat tynga dig för mycket? Du är
+          inte ensam – och hjälp finns att få. Förutom korttidsterapi erbjuder
+          vi filosofisk konsultation och klangskålsbehandlingar.
+        </p>
+
+        <a href="yhteystiedot.html" class="btn-dark">
           <span data-lang="fi">Ota yhteyttä</span>
           <span data-lang="en">Contact us</span>
           <span data-lang="sv">Kontakta oss</span>
         </a>
-      </li>
-    </ul>
-  </nav>
-
-  </header>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content fade-in">
-      <div class="hero-eyebrow">Kristiina Salo</div>
-
-      <h1 data-lang="fi">Lyhytterapia</h1>
-      <h1 data-lang="en">Brief therapy</h1>
-      <h1 data-lang="sv">Korttidsterapi</h1>
-
-      <div class="hero-ctas">
-        <a href="yhteystiedot.html" class="btn-primary">
-          <span data-lang="fi">Ota yhteyttä</span>
-          <span data-lang="en">Contact Us</span>
-          <span data-lang="sv">Kontakta oss</span>
-        </a>
-        <a href="#services" class="btn-ghost">
-          <span data-lang="fi">Tutustu palveluihin</span>
-          <span data-lang="en">Explore services</span>
-          <span data-lang="sv">Utforska tjänster</span>
-        </a>
       </div>
-    </div>
-  </section>
+      <div class="welcome-img fade-in">
+        <img
+          src="assets/img/welcome.jpg"
+          alt="Rauhallinen järvimaisema"
+          loading="lazy"
+        />
+      </div>
+    </section>
 
-  <!-- WELCOME -->
-  <section class="welcome">
-    <div class="welcome-text fade-in">
-      <h2 data-lang="fi">Tervetuloa – <em>Ota ensimmäinen askel kohti parempaa oloa</em></h2>
-      <h2 data-lang="en">Welcome – <em>Take the first step towards feeling better</em></h2>
-      <h2 data-lang="sv">Välkommen – <em>Ta det första steget mot att må bättre</em></h2>
-
-      <p data-lang="fi">Tuntuuko, että ajatukset pyörivät kehää etkä löydä ulospääsyä? Onko stressi, ahdistus, jaksamisen haasteet tai elämän muutostilanteet alkaneet painaa liikaa? Et ole yksin – ja apua on saatavilla. Tarjoamme lyhytterapian lisäksi filosofista konsultaatiota ja äänimaljahoitoja.</p>
-      <p data-lang="en">Do you feel like your thoughts are going in circles and you can't find a way out? Have stress, anxiety, coping challenges, or life-changing situations started to weigh you down too much? You are not alone – and help is available. In addition to brief therapy, we offer philosophical consultation and singing bowl treatments.</p>
-      <p data-lang="sv">Känner du att dina tankar snurrar i cirklar och att du inte hittar någon väg ut? Har stress, ångest, utmaningar med att hantera problem eller livsförändrande situationer börjat tynga dig för mycket? Du är inte ensam – och hjälp finns att få. Förutom korttidsterapi erbjuder vi filosofisk konsultation och klangskålsbehandlingar.</p>
-
-      <a href="yhteystiedot.html" class="btn-dark">
-        <span data-lang="fi">Ota yhteyttä</span>
-        <span data-lang="en">Contact us</span>
-        <span data-lang="sv">Kontakta oss</span>
-      </a>
-    </div>
-    <div class="welcome-img fade-in">
-      <img
-        src="assets/img/welcome.jpg"
-        alt="Rauhallinen järvimaisema"
-        loading="lazy"
-      />
-    </div>
-  </section>
-
-  <!-- SERVICES CARDS -->
-  <section class="services" id="services">
-    <div class="section-header fade-in">
-      <!-- <div class="section-eyebrow">
+    <!-- SERVICES CARDS -->
+    <section class="services" id="services">
+      <div class="section-header fade-in">
+        <!-- <div class="section-eyebrow">
         <span data-lang="fi">Palvelut</span>
         <span data-lang="en">Services</span>
         <span data-lang="sv">Tjänster</span>
       </div> -->
-      <h2 data-lang="fi">Miksi <em>Antimaterial?</em></h2>
-      <h2 data-lang="en">Why <em>Antimaterial?</em></h2>
-      <h2 data-lang="sv">Varför <em>Antimaterial?</em></h2>
-      <p data-lang="fi">Elämässä tulee hetkiä, jolloin omat keinot eivät riitä. Lyhytterapia tarjoaa sinulle matalan kynnyksen tukea silloin, kun kaipaat selkeyttä, helpotusta tai suuntaa. Jo muutama tapaaminen voi auttaa sinua. Katso alta palvelut, joista voit hyötyä juuri sinun tilanteessasi. Jokainen niistä tarjoaa omanlaistaan tukea jaksamiseen, muutoksiin ja mielen rauhoittamiseen – turvallisesti ja lempeästi.</p>
-      <p data-lang="en">There are moments in life when your own resources aren't enough. Brief therapy offers you low-threshold support when you're seeking clarity, relief, or direction. Even a few sessions can make a difference. Browse the services below that may benefit you in your particular situation. Each of them provides its own kind of support for coping, navigating change, and finding peace of mind — safely and gently.</p>
-      <p data-lang="sv">Det finns tillfällen i livet när ens egna resurser inte räcker till. Korttidsterapi erbjuder dig lågtröskelstöd när du behöver klarhet, lindring eller vägledning. Även några få möten kan hjälpa dig. Se nedan vilka tjänster du kan dra nytta av i din specifika situation. Var och en av dem erbjuder sin egen typ av stöd för att hantera, förändra och lugna sinnet – säkert och varsamt.</p>
-    </div>
-
-    <div class="services-grid">
-      <!-- Card 1 -->
-      <div class="service-card fade-in">
-        <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="22" cy="22" r="18"/>
-          <path d="M22 14v8l5 5"/>
-        </svg>
-        <h3>
-          <span data-lang="fi">Lyhytterapia</span>
-          <span data-lang="en">Brief therapy</span>
-          <span data-lang="sv">Korttidsterapi</span>
-        </h3>
-        <p data-lang="fi">Keskusteluapua elämän haasteisiin – selkeyttä, tukea ja oivalluksia muutamassa tapaamisessa.</p>
-        <p data-lang="en">Discussion help for life's challenges – clarity, support and insights in just a few meetings.</p>
-        <p data-lang="sv">Diskussionshjälp för livets utmaningar – klarhet, stöd och insikter på bara några få möten.</p>
-        <a href="lyhytterapia.html" class="card-link">
-          <span data-lang="fi">Lue lisää →</span>
-          <span data-lang="en">Learn more →</span>
-          <span data-lang="sv">Läs mer →</span>
-        </a>
+        <h2 data-lang="fi">Miksi <em>Antimaterial?</em></h2>
+        <h2 data-lang="en">Why <em>Antimaterial?</em></h2>
+        <h2 data-lang="sv">Varför <em>Antimaterial?</em></h2>
+        <p data-lang="fi">
+          Elämässä tulee hetkiä, jolloin omat keinot eivät riitä. Lyhytterapia
+          tarjoaa sinulle matalan kynnyksen tukea silloin, kun kaipaat
+          selkeyttä, helpotusta tai suuntaa. Jo muutama tapaaminen voi auttaa
+          sinua. Katso alta palvelut, joista voit hyötyä juuri sinun
+          tilanteessasi. Jokainen niistä tarjoaa omanlaistaan tukea jaksamiseen,
+          muutoksiin ja mielen rauhoittamiseen – turvallisesti ja lempeästi.
+        </p>
+        <p data-lang="en">
+          There are moments in life when your own resources aren't enough. Brief
+          therapy offers you low-threshold support when you're seeking clarity,
+          relief, or direction. Even a few sessions can make a difference.
+          Browse the services below that may benefit you in your particular
+          situation. Each of them provides its own kind of support for coping,
+          navigating change, and finding peace of mind — safely and gently.
+        </p>
+        <p data-lang="sv">
+          Det finns tillfällen i livet när ens egna resurser inte räcker till.
+          Korttidsterapi erbjuder dig lågtröskelstöd när du behöver klarhet,
+          lindring eller vägledning. Även några få möten kan hjälpa dig. Se
+          nedan vilka tjänster du kan dra nytta av i din specifika situation.
+          Var och en av dem erbjuder sin egen typ av stöd för att hantera,
+          förändra och lugna sinnet – säkert och varsamt.
+        </p>
       </div>
 
-      <!-- Card 2 -->
-      <div class="service-card fade-in">
-        <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M22 8 C12 8 6 16 6 22 C6 30 14 38 22 38 C30 38 38 30 38 22"/>
-          <path d="M28 8 l8 0 0 8"/>
-          <path d="M22 22 l14-14"/>
-        </svg>
-        <h3>
-          <span data-lang="fi">Stressi</span>
-          <span data-lang="en">Stress</span>
-          <span data-lang="sv">Stress</span>
-        </h3>
-        <p data-lang="fi">Apua kuormituksen hallintaan ja palautumiseen – löydä keinoja keventää arkea.</p>
-        <p data-lang="en">Help with stress management and recovery – find ways to make everyday life easier.</p>
-        <p data-lang="sv">Hjälp med stresshantering och återhämtning – hitta sätt att göra vardagen enklare.</p>
-        <a href="stressi.html" class="card-link">
-          <span data-lang="fi">Lue lisää →</span>
-          <span data-lang="en">Learn more →</span>
-          <span data-lang="sv">Läs mer →</span>
-        </a>
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <div class="service-card fade-in">
+          <svg
+            class="service-icon"
+            viewBox="0 0 44 44"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <circle cx="22" cy="22" r="18" />
+            <path d="M22 14v8l5 5" />
+          </svg>
+          <h3>
+            <span data-lang="fi">Lyhytterapia</span>
+            <span data-lang="en">Brief therapy</span>
+            <span data-lang="sv">Korttidsterapi</span>
+          </h3>
+          <p data-lang="fi">
+            Keskusteluapua elämän haasteisiin – selkeyttä, tukea ja oivalluksia
+            muutamassa tapaamisessa.
+          </p>
+          <p data-lang="en">
+            Discussion help for life's challenges – clarity, support and
+            insights in just a few meetings.
+          </p>
+          <p data-lang="sv">
+            Diskussionshjälp för livets utmaningar – klarhet, stöd och insikter
+            på bara några få möten.
+          </p>
+          <a href="lyhytterapia.html" class="card-link">
+            <span data-lang="fi">Lue lisää →</span>
+            <span data-lang="en">Learn more →</span>
+            <span data-lang="sv">Läs mer →</span>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card fade-in">
+          <svg
+            class="service-icon"
+            viewBox="0 0 44 44"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path
+              d="M22 8 C12 8 6 16 6 22 C6 30 14 38 22 38 C30 38 38 30 38 22"
+            />
+            <path d="M28 8 l8 0 0 8" />
+            <path d="M22 22 l14-14" />
+          </svg>
+          <h3>
+            <span data-lang="fi">Stressi</span>
+            <span data-lang="en">Stress</span>
+            <span data-lang="sv">Stress</span>
+          </h3>
+          <p data-lang="fi">
+            Apua kuormituksen hallintaan ja palautumiseen – löydä keinoja
+            keventää arkea.
+          </p>
+          <p data-lang="en">
+            Help with stress management and recovery – find ways to make
+            everyday life easier.
+          </p>
+          <p data-lang="sv">
+            Hjälp med stresshantering och återhämtning – hitta sätt att göra
+            vardagen enklare.
+          </p>
+          <a href="stressi.html" class="card-link">
+            <span data-lang="fi">Lue lisää →</span>
+            <span data-lang="en">Learn more →</span>
+            <span data-lang="sv">Läs mer →</span>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card fade-in">
+          <svg
+            class="service-icon"
+            viewBox="0 0 44 44"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M22 40 Q22 28 22 18" />
+            <path d="M22 26 Q10 20 6 28" />
+            <path d="M22 30 Q34 24 38 32" />
+            <path d="M22 18 Q16 10 10 16" />
+            <circle cx="10" cy="16" r="4" />
+            <line x1="10" y1="40" x2="34" y2="40" opacity="0.5" />
+          </svg>
+          <h3>
+            <span data-lang="fi">Työuupumus</span>
+            <span data-lang="en">Burnout</span>
+            <span data-lang="sv">Utbrändhet</span>
+          </h3>
+          <p data-lang="fi">
+            Tukea jaksamiseen ja voimien palauttamiseen – saat tilan pysähtyä ja
+            löytää suuntaa.
+          </p>
+          <p data-lang="en">
+            Support for coping and regaining strength – you will have the space
+            to stop and find direction.
+          </p>
+          <p data-lang="sv">
+            Stöd för att hantera situationen och återfå styrka – du kommer att
+            ha utrymme att stanna upp och hitta riktning
+          </p>
+          <a href="stressi.html" class="card-link">
+            <span data-lang="fi">Lue lisää →</span>
+            <span data-lang="en">Learn more →</span>
+            <span data-lang="sv">Läs mer →</span>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card fade-in">
+          <svg
+            class="service-icon"
+            viewBox="0 0 44 44"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <rect x="8" y="8" width="28" height="28" rx="2" />
+            <path d="M16 22 l6 6 8-10" />
+          </svg>
+          <h3>
+            <span data-lang="fi">Muutosturva</span>
+            <span data-lang="en">Life changes</span>
+            <span data-lang="sv">Livsförändring</span>
+          </h3>
+          <p data-lang="fi">
+            Henkilökohtaista keskustelutukea työelämän muutostilanteissa –
+            luottamuksellisesti ja inhimillisesti.
+          </p>
+          <p data-lang="en">
+            Personal discussion support in changing work situations –
+            confidentially and humanely.
+          </p>
+          <p data-lang="sv">
+            Personligt stöd i samtal i föränderliga situationer i arbetslivet –
+            konfidentiellt och mänskligt.
+          </p>
+          <a href="muutosturva.html" class="card-link">
+            <span data-lang="fi">Lue lisää →</span>
+            <span data-lang="en">Learn more →</span>
+            <span data-lang="sv">Läs mer →</span>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card fade-in">
+          <svg
+            class="service-icon"
+            viewBox="0 0 44 44"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M10 32 Q22 6 34 32" />
+            <circle cx="22" cy="20" r="4" />
+          </svg>
+          <h3>
+            <span data-lang="fi">Filosofinen konsultaatio</span>
+            <span data-lang="en">Philosophical consultation</span>
+            <span data-lang="sv">Filosofisk konsultation</span>
+          </h3>
+          <p data-lang="fi">
+            Tutkivaa keskustelua elämän suurista kysymyksistä – ilman
+            diagnooseja, kiirettä tai valmiita vastauksia.
+          </p>
+          <p data-lang="en">
+            An exploratory discussion about life's big questions – without
+            diagnoses, haste or ready-made answers.
+          </p>
+          <p data-lang="sv">
+            En utforskande diskussion om livets stora frågor – utan diagnoser,
+            brådska eller färdiga svar.
+          </p>
+          <a href="filosofinen.html" class="card-link">
+            <span data-lang="fi">Lue lisää →</span>
+            <span data-lang="en">Learn more →</span>
+            <span data-lang="sv">Läs mer →</span>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card fade-in">
+          <svg
+            class="service-icon"
+            viewBox="0 0 44 44"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <ellipse cx="22" cy="16" rx="14" ry="4" />
+            <path d="M8 16 Q8 34 22 36 Q36 34 36 16" />
+            <line x1="16" y1="36" x2="28" y2="36" stroke-width="3" />
+            <line x1="30" y1="6" x2="22" y2="16" stroke-width="3" />
+            <circle cx="31" cy="5" r="2" fill="currentColor" stroke="none" />
+          </svg>
+          <h3>
+            <span data-lang="fi">Äänimaljat</span>
+            <span data-lang="en">Singing bowls</span>
+            <span data-lang="sv">Sjungande skålar</span>
+          </h3>
+          <p data-lang="fi">
+            Syvärentouttava hoito keholle ja mielelle äänivärähtelyn avulla –
+            lempeästi ja levollisesti.
+          </p>
+          <p data-lang="en">
+            A deeply relaxing treatment for body and mind using sound vibrations
+            – gently and calmly.
+          </p>
+          <p data-lang="sv">
+            En djupt avslappnande behandling för kropp och själ med hjälp av
+            ljudvibrationer – mjukt och lugnt.
+          </p>
+          <a href="aanimalja.html" class="card-link">
+            <span data-lang="fi">Lue lisää →</span>
+            <span data-lang="en">Learn more →</span>
+            <span data-lang="sv">Läs mer →</span>
+          </a>
+        </div>
       </div>
+    </section>
 
-      <!-- Card 3 -->
-      <div class="service-card fade-in">
-        <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M22 40 Q22 28 22 18"/>
-          <path d="M22 26 Q10 20 6 28"/>
-          <path d="M22 30 Q34 24 38 32"/>
-          <path d="M22 18 Q16 10 10 16"/>
-          <circle cx="10" cy="16" r="4"/>
-          <line x1="10" y1="40" x2="34" y2="40" opacity="0.5"/>
-
-        </svg>
-        <h3>
-          <span data-lang="fi">Työuupumus</span>
-          <span data-lang="en">Burnout</span>
-          <span data-lang="sv">Utbrändhet</span>
-        </h3>
-        <p data-lang="fi">Tukea jaksamiseen ja voimien palauttamiseen – saat tilan pysähtyä ja löytää suuntaa.</p>
-        <p data-lang="en">Support for coping and regaining strength – you will have the space to stop and find direction.</p>
-        <p data-lang="sv">Stöd för att hantera situationen och återfå styrka – du kommer att ha utrymme att stanna upp och hitta riktning</p>
-        <a href="stressi.html" class="card-link">
-          <span data-lang="fi">Lue lisää →</span>
-          <span data-lang="en">Learn more →</span>
-          <span data-lang="sv">Läs mer →</span>
-        </a>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="service-card fade-in">
-        <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="8" y="8" width="28" height="28" rx="2"/>
-          <path d="M16 22 l6 6 8-10"/>
-        </svg>
-        <h3>
-          <span data-lang="fi">Muutosturva</span>
-          <span data-lang="en">Life changes</span>
-          <span data-lang="sv">Livsförändring</span>
-        </h3>
-        <p data-lang="fi">Henkilökohtaista keskustelutukea työelämän muutostilanteissa – luottamuksellisesti ja inhimillisesti.</p>
-        <p data-lang="en">Personal discussion support in changing work situations – confidentially and humanely.</p>
-        <p data-lang="sv">Personligt stöd i samtal i föränderliga situationer i arbetslivet – konfidentiellt och mänskligt.</p>
-        <a href="muutosturva.html" class="card-link">
-          <span data-lang="fi">Lue lisää →</span>
-          <span data-lang="en">Learn more →</span>
-          <span data-lang="sv">Läs mer →</span>
-        </a>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="service-card fade-in">
-        <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M10 32 Q22 6 34 32"/>
-          <circle cx="22" cy="20" r="4"/>
-        </svg>
-        <h3>
-          <span data-lang="fi">Filosofinen konsultaatio</span>
-          <span data-lang="en">Philosophical consultation</span>
-          <span data-lang="sv">Filosofisk konsultation</span>
-        </h3>
-        <p data-lang="fi">Tutkivaa keskustelua elämän suurista kysymyksistä – ilman diagnooseja, kiirettä tai valmiita vastauksia.</p>
-        <p data-lang="en">An exploratory discussion about life's big questions – without diagnoses, haste or ready-made answers.</p>
-        <p data-lang="sv">En utforskande diskussion om livets stora frågor – utan diagnoser, brådska eller färdiga svar.</p>
-        <a href="filosofinen.html" class="card-link">
-          <span data-lang="fi">Lue lisää →</span>
-          <span data-lang="en">Learn more →</span>
-          <span data-lang="sv">Läs mer →</span>
-        </a>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="service-card fade-in">
-        <svg class="service-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5">
-          <ellipse cx="22" cy="16" rx="14" ry="4"/>
-          <path d="M8 16 Q8 34 22 36 Q36 34 36 16"/>
-          <line x1="16" y1="36" x2="28" y2="36" stroke-width="3"/>
-          <line x1="30" y1="6" x2="22" y2="16" stroke-width="3"/>
-          <circle cx="31" cy="5" r="2" fill="currentColor" stroke="none"/>
-        </svg>
-        <h3>
-          <span data-lang="fi">Äänimaljat</span>
-          <span data-lang="en">Singing bowls</span>
-          <span data-lang="sv">Sjungande skålar</span>
-        </h3>
-        <p data-lang="fi">Syvärentouttava hoito keholle ja mielelle äänivärähtelyn avulla – lempeästi ja levollisesti.</p>
-        <p data-lang="en">A deeply relaxing treatment for body and mind using sound vibrations – gently and calmly.</p>
-        <p data-lang="sv">En djupt avslappnande behandling för kropp och själ med hjälp av ljudvibrationer – mjukt och lugnt.</p>
-        <a href="aanimalja.html" class="card-link">
-          <span data-lang="fi">Lue lisää →</span>
-          <span data-lang="en">Learn more →</span>
-          <span data-lang="sv">Läs mer →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- BIO -->
-  <section class="bio">
-    <div class="bio-img fade-in">
-      <img
-        src="assets/img/kristiina-bio.jpg"
-        alt="Kristiina Salo"
-        loading="lazy"
-      />
-      <!-- <div class="img-badge" data-lang="fi">"Kevennä taakkaa, löydä uusia näkökulmia"</div>
+    <!-- BIO -->
+    <section class="bio">
+      <div class="bio-img fade-in">
+        <img
+          src="assets/img/kristiina-bio.jpg"
+          alt="Kristiina Salo"
+          loading="lazy"
+        />
+        <!-- <div class="img-badge" data-lang="fi">"Kevennä taakkaa, löydä uusia näkökulmia"</div>
       <div class="img-badge" data-lang="en">"Lighten your load, find new perspectives"</div>
       <div class="img-badge" data-lang="sv">"Lätta din börda, hitta nya perspektiv"</div> -->
-    </div>
-    <div class="bio-text fade-in">
-      <div class="bio-name">Kristiina Salo</div>
+      </div>
+      <div class="bio-text fade-in">
+        <div class="bio-name">Kristiina Salo</div>
 
-      <h2 data-lang="fi">Miten voin auttaa sinua <em>tai työyhteisöäsi?</em></h2>
-      <h2 data-lang="en">How can I help you <em>or your work community?</em></h2>
-      <h2 data-lang="sv">Hur kan jag hjälpa <em>dig eller ditt arbetsgemenskap?</em></h2>
+        <h2 data-lang="fi">
+          Miten voin auttaa sinua <em>tai työyhteisöäsi?</em>
+        </h2>
+        <h2 data-lang="en">
+          How can I help you <em>or your work community?</em>
+        </h2>
+        <h2 data-lang="sv">
+          Hur kan jag hjälpa <em>dig eller ditt arbetsgemenskap?</em>
+        </h2>
 
-      <p data-lang="fi">Tuntuuko, että arki hengittää niskaan, ajatus ei kulje tai suunta on hukassa? Onko stressi, uupumus, ihmissuhteet tai elämänmuutokset vieneet voimia? Ehkä yrität jaksaa yksin, vaikka kaipaisitkin tukea, tilaa ja uutta suuntaa.</p>
-      <p data-lang="en">Do you feel like everyday life is breathing down your neck, your thoughts are stuck, or you're lost? Have stress, exhaustion, relationships, or Life changes sapped your strength? Maybe you're trying to cope alone, even though you'd like support, space, and a new direction.</p>
-      <p data-lang="sv">Känns det som om vardagen andas dig i nacken, dina tankar fastnar eller du är vilsen? Har stress, utmattning, relationer eller livsförändringar tagit din styrka? Kanske försöker du klara dig ensam, även om du önskar stöd, utrymme och en ny riktning.</p>
+        <p data-lang="fi">
+          Tuntuuko, että arki hengittää niskaan, ajatus ei kulje tai suunta on
+          hukassa? Onko stressi, uupumus, ihmissuhteet tai elämänmuutokset
+          vieneet voimia? Ehkä yrität jaksaa yksin, vaikka kaipaisitkin tukea,
+          tilaa ja uutta suuntaa.
+        </p>
+        <p data-lang="en">
+          Do you feel like everyday life is breathing down your neck, your
+          thoughts are stuck, or you're lost? Have stress, exhaustion,
+          relationships, or Life changes sapped your strength? Maybe you're
+          trying to cope alone, even though you'd like support, space, and a new
+          direction.
+        </p>
+        <p data-lang="sv">
+          Känns det som om vardagen andas dig i nacken, dina tankar fastnar
+          eller du är vilsen? Har stress, utmattning, relationer eller
+          livsförändringar tagit din styrka? Kanske försöker du klara dig ensam,
+          även om du önskar stöd, utrymme och en ny riktning.
+        </p>
 
-      <p data-lang="fi">Olen Kristiina Salo, ja perustin Antimaterialin, jotta sinulla olisi paikka, jossa voit pysähtyä – tulla kuulluksi, keventää taakkaa ja löytää uusia näkökulmia. Tarjoan lyhytterapiaa, äänimaljahoitoja ja filosofista keskustelua sekä yksityishenkilöille että yrityksille. Palveluni sopivat sinulle, joka et ehkä kaipaa diagnoosia, mutta tarvitset ymmärrystä, selkeyttä ja keinoja edetä.
+        <p data-lang="fi">
+          Olen Kristiina Salo, ja perustin Antimaterialin, jotta sinulla olisi
+          paikka, jossa voit pysähtyä – tulla kuulluksi, keventää taakkaa ja
+          löytää uusia näkökulmia. Tarjoan lyhytterapiaa, äänimaljahoitoja ja
+          filosofista keskustelua sekä yksityishenkilöille että yrityksille.
+          Palveluni sopivat sinulle, joka et ehkä kaipaa diagnoosia, mutta
+          tarvitset ymmärrystä, selkeyttä ja keinoja edetä.
+        </p>
+        <p data-lang="en">
+          I am Kristiina Salo, and I founded Antimaterial so that you can have a
+          place where you can stop – be heard, lighten your load and find new
+          perspectives. I offer brief therapy, singing bowl treatments and
+          philosophical discussions for both individuals and companies.
+        </p>
+        <p data-lang="sv">
+          Jag är Kristiina Salo, och jag grundade Antimaterial för att du ska ha
+          en plats där du kan stanna upp – bli hörd, lätta din börda och hitta
+          nya perspektiv. Jag erbjuder kortterapi, behandlingar med sjungande
+          skålar och filosofiska samtal för både privatpersoner och företag.
+          Mina tjänster passar dig som kanske inte behöver en diagnos, men som
+          behöver förståelse, klarhet och sätt att komma vidare.
+        </p>
 
-</p>
-      <p data-lang="en">I am Kristiina Salo, and I founded Antimaterial so that you can have a place where you can stop – be heard, lighten your load and find new perspectives. I offer brief therapy, singing bowl treatments and philosophical discussions for both individuals and companies.</p>
-      <p data-lang="sv">Jag är Kristiina Salo, och jag grundade Antimaterial för att du ska ha en plats där du kan stanna upp – bli hörd, lätta din börda och hitta nya perspektiv. Jag erbjuder kortterapi, behandlingar med sjungande skålar och filosofiska samtal för både privatpersoner och företag. Mina tjänster passar dig som kanske inte behöver en diagnos, men som behöver förståelse, klarhet och sätt att komma vidare.</p>
+        <p data-lang="en">
+          My services are suitable for you, who may not need a diagnosis, but
+          need understanding, clarity and ways to move forward.
+        </p>
 
-      <p data-lang="en">My services are suitable for you, who may not need a diagnosis, but need understanding, clarity and ways to move forward.</p>
+        <a href="yhteystiedot.html" class="btn-dark">
+          <span data-lang="fi">Ota yhteyttä</span>
+          <span data-lang="en">Contact us</span>
+          <span data-lang="sv">Kontakta oss</span>
+        </a>
+      </div>
+    </section>
 
-      <a href="yhteystiedot.html" class="btn-dark">
+    <!-- SERVICES LIST (How can I help you or your community -->
+    <section class="services-list fade-in">
+      <h2 data-lang="fi">
+        Miten voin auttaa <em>sinua tai työyhteisöäsi?</em>
+      </h2>
+      <h2 data-lang="en">
+        How can I help you <em>or your work community?</em>
+      </h2>
+      <h2 data-lang="sv">
+        Hur kan jag hjälpa <em>dig eller ditt arbetsgemenskap?</em>
+      </h2>
+
+      <div class="list-grid">
+        <div class="list-item">
+          <h3 data-lang="fi">Lyhytterapia</h3>
+          <h3 data-lang="en">Brief therapy</h3>
+          <h3 data-lang="sv">Korttidsbehandling</h3>
+          <p data-lang="fi">
+            Selkeyttä ja tukea elämän eri vaiheisiin – kun oma jaksaminen on
+            koetuksella tai suunta epäselvä.
+          </p>
+          <p data-lang="en">
+            Clarity and support for different stages of life – when your own
+            resilience is tested or your direction is unclear.
+          </p>
+          <p data-lang="sv">
+            Tydlighet och stöd för olika skeden i livet – när din egen
+            motståndskraft sätts på prov eller din riktning är oklar.
+          </p>
+          <a href="lyhytterapia.html">→</a>
+        </div>
+        <div class="list-item">
+          <h3 data-lang="fi">Stressi & työuupumus</h3>
+          <h3 data-lang="en">Stress & Burnout</h3>
+          <h3 data-lang="sv">Stress och utbrändhet</h3>
+          <p data-lang="fi">
+            Apua palautumiseen, rajaamiseen ja voimavarojen vahvistamiseen –
+            yksilöllisesti tai osana työhyvinvointia.
+          </p>
+          <p data-lang="en">
+            Help with recovery, delineation and strengthening resources –
+            individually or as part of workplace well-being.
+          </p>
+          <p data-lang="sv">
+            Hjälp med återhämtning, avgränsning och resursstärkning –
+            individuellt eller som en del av välbefinnandet på arbetsplatsen.
+          </p>
+          <a href="stressi.html">→</a>
+        </div>
+        <div class="list-item">
+          <h3 data-lang="fi">Muutosturva</h3>
+          <h3 data-lang="en">Life changes</h3>
+          <h3 data-lang="sv">Livsförändring</h3>
+          <p data-lang="fi">
+            Keskustelutukea työelämän muutos- ja irtisanomistilanteissa –
+            inhimillisesti ja tulevaisuuteen katsoen. Työn ja elämän
+            risteyskohta voi johtaa uuteen kukoistukseen.
+          </p>
+          <p data-lang="en">
+            Discussion support in situations of change and dismissal in working
+            life – humanely and with an eye to the future. The intersection of
+            work and life can lead to new flourishing.
+          </p>
+          <p data-lang="sv">
+            Diskussionsstöd i förändrings- och uppsägningssituationer i
+            arbetslivet – mänskligt och med blicken riktad mot framtiden.
+            Skärningspunkten mellan arbete och liv kan leda till ny blomstring.
+          </p>
+          <a href="muutosturva.html">→</a>
+        </div>
+        <div class="list-item">
+          <h3 data-lang="fi">Filosofinen konsultaatio</h3>
+          <h3 data-lang="en">Philosophical consultation</h3>
+          <h3 data-lang="sv">Filosofisk konsultation</h3>
+          <p data-lang="fi">
+            Tilaa pohtia elämän isoja kysymyksiä ilman diagnooseja – kun kaipaat
+            syvyyttä ja merkityksellisyyttä.
+          </p>
+          <p data-lang="en">
+            A space to reflect on life's big questions without diagnoses – when
+            you crave depth and meaning.
+          </p>
+          <p data-lang="sv">
+            Ett utrymme att reflektera över livets stora frågor utan diagnoser –
+            när du längtar efter djup och mening.
+          </p>
+          <a href="filosofinen.html">→</a>
+        </div>
+        <div class="list-item">
+          <h3 data-lang="fi">Äänimaljahoidot</h3>
+          <h3 data-lang="en">Singing bowl treatments</h3>
+          <h3 data-lang="sv">Klangskålsbehandlingar</h3>
+          <p data-lang="fi">
+            Syvärentouttava hoitomuoto, joka rauhoittaa kehoa ja mieltä –
+            hiljaisuuden kautta palautumista. Sopii myös työyhteisöille tai
+            palautumispäiviin.
+          </p>
+          <p data-lang="en">
+            A deeply relaxing treatment that calms the body and mind – recovery
+            through silence. Also suitable for work communities or recovery
+            days.
+          </p>
+          <p data-lang="sv">
+            En djupt avslappnande behandling som lugnar kropp och själ –
+            återhämtning genom tystnad. Även lämplig för arbetsgemenskaper eller
+            återhämtningsdagar.
+          </p>
+          <a href="aanimalja.html">→</a>
+        </div>
+        <div class="list-item">
+          <h3 data-lang="fi">
+            Kaikki palvelut ovat saatavilla myös yrityksille:
+          </h3>
+          <h3 data-lang="en">All services are also available to businesses:</h3>
+          <h3 data-lang="sv">
+            Alla tjänster är även tillgängliga för företag:
+          </h3>
+          <ul data-lang="fi">
+            <li>Yksilöllistä keskustelutukea työntekijöille</li>
+            <li>Tukea muutosturvatilanteisiin</li>
+            <li>
+              Rentouttavia äänimaljahoitoja palautumispäiviin tai henkilöstön
+              hyvinvointiin
+            </li>
+            <li>Filosofisia työpajoja ja yhteistä ajattelun tilaa</li>
+          </ul>
+          <ul data-lang="en">
+            <li>Individual discussion support for employees</li>
+            <li>Support for Life changes situations</li>
+            <li>
+              Relaxing singing bowl treatments for recovery days or staff
+              well-being
+            </li>
+            <li>Philosophical workshops and shared thinking space</li>
+          </ul>
+          <ul data-lang="sv">
+            <li>Individuellt samtalsstöd för anställda</li>
+            <li>Stöd för förändringar i säkerhetssituationer</li>
+            <li>
+              Avkopplande klangskålsbehandlingar för återhämtningsdagar eller
+              personalens välbefinnande
+            </li>
+            <li>Filosofiska workshops och gemensamt tankeutrymme</li>
+          </ul>
+          <a href="yhteystiedot.html">→</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY ANTIMATERIAL -->
+    <section class="why">
+      <div class="why-text fade-in">
+        <h2 data-lang="fi">Mikä on <em>Antimaterial?</em></h2>
+        <h2 data-lang="en">What is <em>Antimaterial?</em></h2>
+        <h2 data-lang="sv">Vad är <em>Antimaterial?</em></h2>
+
+        <p data-lang="fi">
+          Antimaterial syntyi ideasta, että joskus valo voi lisääntyä, vaikka
+          lisätään suodattavia kerroksia.
+          <a
+            href="https://www.youtube.com/watch?v=zcqZHYo7ONs"
+            target="_blank"
+            rel="noopener"
+            >YouTube-video Bellin teoreemasta</a
+          >
+          ja polarisoitujen linssien käyttäytymisestä muistuttaa siitä, miten
+          ihmeellinen todellisuus onkaan.
+        </p>
+        <p data-lang="en">
+          Antimaterial was born from the idea that sometimes light can be
+          increased even when additional layers of filtering are added.
+          <a
+            href="https://www.youtube.com/watch?v=zcqZHYo7ONs"
+            target="_blank"
+            rel="noopener"
+            >A YouTube video about Bell's theorem and the behavior of polarized
+            lenses</a
+          >
+          reminds us of how amazing reality is.
+        </p>
+        <p data-lang="sv">
+          Antimaterial föddes ur idén att ljus ibland kan öka även när
+          filtrerande lager läggs till.
+          <a
+            href="https://www.youtube.com/watch?v=zcqZHYo7ONs"
+            target="_blank"
+            rel="noopener"
+            >En YouTube-video om Bells sats</a
+          >
+          och polariserade linsers beteende påminner oss om hur fantastisk
+          verkligheten är.
+        </p>
+
+        <p data-lang="fi">
+          Kun valonlähteen eteen laitetaan kaksi polarisoitua linssiä, valoa
+          tulee läpi vähemmän, tai ei ollenkaan. Mutta mitä tapahtuu, kun väliin
+          lisätään vielä kolmas linssi? Valoa pitäisi kaiken järjen mukaan tulla
+          linssien läpi vähemmän kuin kahden linssin läpi – mutta sitä tuleekin
+          enemmän. Tätä on vaikea uskoa jos ei omin silmin sitä näe.
+          Antimaterial on kerros ymmärrystä, joka lisää valoa.
+        </p>
+        <p data-lang="en">
+          When you put two polarized lenses in front of a light source, less
+          light, or none at all, comes through. But what happens when you add a
+          third lens in between? By all logic, less light should come through
+          the lenses than through two lenses – but more does. It's hard to
+          believe this unless you see it with your own eyes. Antimaterial is a
+          layer of understanding that adds light.
+        </p>
+        <p data-lang="sv">
+          När två polariserade linser placeras framför en ljuskälla passerar
+          mindre ljus, eller inget alls, igenom. Men vad händer när man lägger
+          till ett tredje objektiv emellan? Enligt all logik borde mindre ljus
+          komma genom linserna än genom två linser – men det gör mer. Det är
+          svårt att tro detta om man inte ser det med egna ögon. Antimaterial är
+          ett lager av förståelse som tillför ljus.
+        </p>
+      </div>
+      <div class="why-visual fade-in">
+        <div class="why-quote">
+          <p data-lang="fi">
+            "Antimaterial on ymmärryksen kerros, joka lisää valoa."
+          </p>
+          <p data-lang="en">
+            "Antimaterial is a layer of understanding that adds light."
+          </p>
+          <p data-lang="sv">
+            "Antimaterial är ett lager av förståelse som tillför ljus."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KUKA MINÄ OLEN -->
+    <section class="cta-banner fade-in">
+      <h2 data-lang="fi">Kuka <em>minä olen?</em></h2>
+      <h2 data-lang="en">Who <em>am I?</em></h2>
+      <h2 data-lang="sv">Vem <em>är jag?</em></h2>
+
+      <p data-lang="fi">
+        Olen kulkenut pitkän tien uteliaana ihmismielen, kehotietoisuuden ja
+        viisauden etsijänä. Taustaltani olen valtiotieteiden maisteri (Helsingin
+        yliopisto), ja olen opiskellut myös psykologiaa ja kasvatustiedettä.
+        Joogan aloitin 1990-luvulla Teksasissa ja olen sittemmin kouluttautunut
+        mm. Intiassa Mysoressa. Lyhytterapeutiksi valmistuin 2024, mutta uusien
+        näkökulmien löytäminen on jo filosofian opinnoista tuttua.
+      </p>
+      <p data-lang="en">
+        I have come a long way as a curious seeker of the human mind, body
+        awareness and wisdom. My background is a Master of Political Science
+        (University of Helsinki), and I have also studied psychology and
+        education. I started yoga in the 1990s in Texas and have since trained
+        in places like Mysore, India. I graduated as a short-term therapist in
+        2024, but finding new perspectives is already familiar from my
+        philosophy studies.
+      </p>
+      <p data-lang="sv">
+        Jag har kommit långt som en nyfiken sökare av det mänskliga sinnet,
+        kroppsmedvetenhet och visdom. Min bakgrund är inom statsvetenskap
+        (Helsingfors universitet), och jag har även studerat psykologi och
+        pedagogik. Jag började med yoga på 1990-talet i Texas och har sedan dess
+        utbildat mig i bland annat: I Mysore, Indien. Jag tog examen som
+        korttidsterapeut år 2024, men att hitta nya perspektiv är redan bekant
+        från mina filosofistudier.
+      </p>
+
+      <a href="yhteystiedot.html" class="btn-white">
         <span data-lang="fi">Ota yhteyttä</span>
         <span data-lang="en">Contact us</span>
         <span data-lang="sv">Kontakta oss</span>
       </a>
-    </div>
-  </section>
+    </section>
 
-    <!-- SERVICES LIST (How can I help you or your community -->
-  <section class="services-list fade-in">
-    <h2 data-lang="fi">Miten voin auttaa <em>sinua tai työyhteisöäsi?</em></h2>
-    <h2 data-lang="en">How can I help you <em>or your work community?</em></h2>
-    <h2 data-lang="sv">Hur kan jag hjälpa <em>dig eller ditt arbetsgemenskap?</em></h2>
-
-    <div class="list-grid">
-      <div class="list-item">
-        <h3 data-lang="fi">Lyhytterapia</h3>
-        <h3 data-lang="en">Brief therapy</h3>
-        <h3 data-lang="sv">Korttidsbehandling</h3>
-        <p data-lang="fi">Selkeyttä ja tukea elämän eri vaiheisiin – kun oma jaksaminen on koetuksella tai suunta epäselvä.</p>
-        <p data-lang="en">Clarity and support for different stages of life – when your own resilience is tested or your direction is unclear.</p>
-        <p data-lang="sv">Tydlighet och stöd för olika skeden i livet – när din egen motståndskraft sätts på prov eller din riktning är oklar.</p>
-        <a href="lyhytterapia.html">→</a>
-      </div>
-      <div class="list-item">
-        <h3 data-lang="fi">Stressi & työuupumus</h3>
-        <h3 data-lang="en">Stress & Burnout</h3>
-        <h3 data-lang="sv">Stress och utbrändhet</h3>
-        <p data-lang="fi">Apua palautumiseen, rajaamiseen ja voimavarojen vahvistamiseen – yksilöllisesti tai osana työhyvinvointia.</p>
-        <p data-lang="en">Help with recovery, delineation and strengthening resources – individually or as part of workplace well-being.</p>
-        <p data-lang="sv">Hjälp med återhämtning, avgränsning och resursstärkning – individuellt eller som en del av välbefinnandet på arbetsplatsen.</p>
-        <a href="stressi.html">→</a>
-      </div>
-      <div class="list-item">
-        <h3 data-lang="fi">Muutosturva</h3>
-        <h3 data-lang="en">Life changes</h3>
-        <h3 data-lang="sv">Livsförändring</h3>
-        <p data-lang="fi">Keskustelutukea työelämän muutos- ja irtisanomistilanteissa – inhimillisesti ja tulevaisuuteen katsoen. Työn ja elämän risteyskohta voi johtaa uuteen kukoistukseen.</p>
-        <p data-lang="en">Discussion support in situations of change and dismissal in working life – humanely and with an eye to the future. The intersection of work and life can lead to new flourishing.</p>
-        <p data-lang="sv">Diskussionsstöd i förändrings- och uppsägningssituationer i arbetslivet – mänskligt och med blicken riktad mot framtiden. Skärningspunkten mellan arbete och liv kan leda till ny blomstring.</p>
-        <a href="muutosturva.html">→</a>
-      </div>
-      <div class="list-item">
-        <h3 data-lang="fi">Filosofinen konsultaatio</h3>
-        <h3 data-lang="en">Philosophical consultation</h3>
-        <h3 data-lang="sv">Filosofisk konsultation</h3>
-        <p data-lang="fi">Tilaa pohtia elämän isoja kysymyksiä ilman diagnooseja – kun kaipaat syvyyttä ja merkityksellisyyttä.</p>
-        <p data-lang="en">A space to reflect on life's big questions without diagnoses – when you crave depth and meaning.</p>
-        <p data-lang="sv">Ett utrymme att reflektera över livets stora frågor utan diagnoser – när du längtar efter djup och mening.</p>
-        <a href="filosofinen.html">→</a>
-      </div>
-      <div class="list-item">
-        <h3 data-lang="fi">Äänimaljahoidot</h3>
-        <h3 data-lang="en">Singing bowl treatments</h3>
-        <h3 data-lang="sv">Klangskålsbehandlingar</h3>
-        <p data-lang="fi">Syvärentouttava hoitomuoto, joka rauhoittaa kehoa ja mieltä – hiljaisuuden kautta palautumista. Sopii myös työyhteisöille tai palautumispäiviin.
-</p>
-        <p data-lang="en">A deeply relaxing treatment that calms the body and mind – recovery through silence. Also suitable for work communities or recovery days.</p>
-        <p data-lang="sv">En djupt avslappnande behandling som lugnar kropp och själ – återhämtning genom tystnad. Även lämplig för arbetsgemenskaper eller återhämtningsdagar.</p>
-        <a href="aanimalja.html">→</a>
-      </div>
-      <div class="list-item">
-        <h3 data-lang="fi">Kaikki palvelut ovat saatavilla myös yrityksille:</h3>
-        <h3 data-lang="en">All services are also available to businesses:</h3>
-        <h3 data-lang="sv">Alla tjänster är även tillgängliga för företag:</h3>
-        <ul data-lang="fi">
-          <li>Yksilöllistä keskustelutukea työntekijöille</li>
-          <li>Tukea muutosturvatilanteisiin</li>
-          <li>Rentouttavia äänimaljahoitoja palautumispäiviin tai henkilöstön hyvinvointiin</li>
-          <li>Filosofisia työpajoja ja yhteistä ajattelun tilaa</li>
-        </ul>
-        <ul data-lang="en">
-          <li>Individual discussion support for employees</li>
-          <li>Support for Life changes situations</li>
-          <li>Relaxing singing bowl treatments for recovery days or staff well-being</li>
-          <li>Philosophical workshops and shared thinking space</li>
-        </ul>
-        <ul data-lang="sv">
-          <li>Individuellt samtalsstöd för anställda</li>
-          <li>Stöd för förändringar i säkerhetssituationer</li>
-          <li>Avkopplande klangskålsbehandlingar för återhämtningsdagar eller personalens välbefinnande</li>
-          <li>Filosofiska workshops och gemensamt tankeutrymme</li>
-        </ul>
-        <a href="yhteystiedot.html">→</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY ANTIMATERIAL -->
-  <section class="why">
-    <div class="why-text fade-in">
-      <h2 data-lang="fi">Mikä on <em>Antimaterial?</em></h2>
-      <h2 data-lang="en">What is <em>Antimaterial?</em></h2>
-      <h2 data-lang="sv">Vad är <em>Antimaterial?</em></h2>
-
-      <p data-lang="fi">Antimaterial syntyi ideasta, että joskus valo voi lisääntyä, vaikka lisätään suodattavia kerroksia. <a href="https://www.youtube.com/watch?v=zcqZHYo7ONs" target="_blank" rel="noopener">YouTube-video Bellin teoreemasta</a> ja polarisoitujen linssien käyttäytymisestä muistuttaa siitä, miten ihmeellinen todellisuus onkaan.</p>
-      <p data-lang="en">Antimaterial was born from the idea that sometimes light can be increased even when additional layers of filtering are added. <a href="https://www.youtube.com/watch?v=zcqZHYo7ONs" target="_blank" rel="noopener">A YouTube video about Bell's theorem and the behavior of polarized lenses</a> reminds us of how amazing reality is.</p>
-      <p data-lang="sv">Antimaterial föddes ur idén att ljus ibland kan öka även när filtrerande lager läggs till. <a href="https://www.youtube.com/watch?v=zcqZHYo7ONs" target="_blank" rel="noopener">En YouTube-video om Bells sats</a> och polariserade linsers beteende påminner oss om hur fantastisk verkligheten är.</p>
-
-      <p data-lang="fi">Kun valonlähteen eteen laitetaan kaksi polarisoitua linssiä, valoa tulee läpi vähemmän, tai ei ollenkaan. Mutta mitä tapahtuu, kun väliin lisätään vielä kolmas linssi? Valoa pitäisi kaiken järjen mukaan tulla linssien läpi vähemmän kuin kahden linssin läpi – mutta sitä tuleekin enemmän. Tätä on vaikea uskoa jos ei omin silmin sitä näe. Antimaterial on kerros ymmärrystä, joka lisää valoa.</p>
-      <p data-lang="en">When you put two polarized lenses in front of a light source, less light, or none at all, comes through. But what happens when you add a third lens in between? By all logic, less light should come through the lenses than through two lenses – but more does. It's hard to believe this unless you see it with your own eyes. Antimaterial is a layer of understanding that adds light.</p>
-      <p data-lang="sv">När två polariserade linser placeras framför en ljuskälla passerar mindre ljus, eller inget alls, igenom. Men vad händer när man lägger till ett tredje objektiv emellan? Enligt all logik borde mindre ljus komma genom linserna än genom två linser – men det gör mer. Det är svårt att tro detta om man inte ser det med egna ögon. Antimaterial är ett lager av förståelse som tillför ljus.</p>
-    </div>
-    <div class="why-visual fade-in">
-      <div class="why-quote">
-        <p data-lang="fi">"Antimaterial on ymmärryksen kerros, joka lisää valoa."</p>
-        <p data-lang="en">"Antimaterial is a layer of understanding that adds light."</p>
-        <p data-lang="sv">"Antimaterial är ett lager av förståelse som tillför ljus."</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- KUKA MINÄ OLEN -->
-  <section class="cta-banner fade-in">
-    <h2 data-lang="fi">Kuka <em>minä olen?</em></h2>
-    <h2 data-lang="en">Who <em>am I?</em></h2>
-    <h2 data-lang="sv">Vem <em>är jag?</em></h2>
-
-    <p data-lang="fi">Olen kulkenut pitkän tien uteliaana ihmismielen, kehotietoisuuden ja viisauden etsijänä. Taustaltani olen valtiotieteiden maisteri (Helsingin yliopisto), ja olen opiskellut myös psykologiaa ja kasvatustiedettä. Joogan aloitin 1990-luvulla Teksasissa ja olen sittemmin kouluttautunut mm. Intiassa Mysoressa. Lyhytterapeutiksi valmistuin 2024, mutta uusien näkökulmien löytäminen on jo filosofian opinnoista tuttua.</p>
-    <p data-lang="en">I have come a long way as a curious seeker of the human mind, body awareness and wisdom. My background is a Master of Political Science (University of Helsinki), and I have also studied psychology and education. I started yoga in the 1990s in Texas and have since trained in places like Mysore, India. I graduated as a short-term therapist in 2024, but finding new perspectives is already familiar from my philosophy studies.</p>
-    <p data-lang="sv">Jag har kommit långt som en nyfiken sökare av det mänskliga sinnet, kroppsmedvetenhet och visdom. Min bakgrund är inom statsvetenskap (Helsingfors universitet), och jag har även studerat psykologi och pedagogik. Jag började med yoga på 1990-talet i Texas och har sedan dess utbildat mig i bland annat: I Mysore, Indien. Jag tog examen som korttidsterapeut år 2024, men att hitta nya perspektiv är redan bekant från mina filosofistudier.</p>
-
-    <a href="yhteystiedot.html" class="btn-white">
-      <span data-lang="fi">Ota yhteyttä</span>
-      <span data-lang="en">Contact us</span>
-      <span data-lang="sv">Kontakta oss</span>
-    </a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="brand-name">
-          <img src="assets/img/antimaterial_A.svg" alt="Antimaterial logo" style="width: 22px; height: 22px; margin-right: 4px; filter: brightness(0) invert(1);" />
-          Antimaterial
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">
+            <img
+              src="assets/img/antimaterial_A.svg"
+              alt="Antimaterial logo"
+              style="
+                width: 22px;
+                height: 22px;
+                margin-right: 4px;
+                filter: brightness(0) invert(1);
+              "
+            />
+            Antimaterial
+          </div>
+          <div class="contact-info">
+            <div>
+              <a href="mailto:antimaterialkristiina@gmail.com"
+                >antimaterialkristiina@gmail.com</a
+              >
+            </div>
+            <div><a href="tel:+358465835188">046 583 5188</a></div>
+          </div>
         </div>
-        <div class="contact-info">
-          <div><a href="mailto:antimaterialkristiina@gmail.com">antimaterialkristiina@gmail.com</a></div>
-          <div><a href="tel:+358465835188">046 583 5188</a></div>
+        <div class="footer-col">
+          <h4 data-lang="fi">Palvelut</h4>
+          <h4 data-lang="en">Services</h4>
+          <h4 data-lang="sv">Tjänster</h4>
+          <ul>
+            <li>
+              <a href="lyhytterapia.html"
+                ><span data-lang="fi">Lyhytterapia</span
+                ><span data-lang="en">Brief therapy</span
+                ><span data-lang="sv">Korttidsterapi</span></a
+              >
+            </li>
+            <li>
+              <a href="stressi.html"
+                ><span data-lang="fi">Stressi &amp; Työuupumus</span
+                ><span data-lang="en">Stress &amp; Burnout</span
+                ><span data-lang="sv">Stress och utbrändhet</span></a
+              >
+            </li>
+            <li>
+              <a href="muutosturva.html"
+                ><span data-lang="fi">Muutosturva</span
+                ><span data-lang="en">Life changes</span
+                ><span data-lang="sv">Livsförändring</span></a
+              >
+            </li>
+            <li>
+              <a href="filosofinen.html"
+                ><span data-lang="fi">Filosofinen konsultaatio</span
+                ><span data-lang="en">Philosophical consultation</span
+                ><span data-lang="sv">Filosofisk konsultation</span></a
+              >
+            </li>
+            <li>
+              <a href="aanimalja.html"
+                ><span data-lang="fi">Äänimaljat</span
+                ><span data-lang="en">Singing bowls</span
+                ><span data-lang="sv">Sjungande skålar</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-lang="fi">Sivusto</h4>
+          <h4 data-lang="en">Site</h4>
+          <h4 data-lang="sv">Webbplats</h4>
+          <ul>
+            <li>
+              <a href="index.html"
+                ><span data-lang="fi">Etusivu</span
+                ><span data-lang="en">Home page</span
+                ><span data-lang="sv">Hem</span></a
+              >
+            </li>
+            <li>
+              <a href="yhteystiedot.html"
+                ><span data-lang="fi">Ota yhteyttä</span
+                ><span data-lang="en">Contact us</span
+                ><span data-lang="sv">Kontakta oss</span></a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer-col">
-        <h4 data-lang="fi">Palvelut</h4>
-        <h4 data-lang="en">Services</h4>
-        <h4 data-lang="sv">Tjänster</h4>
-        <ul>
-          <li><a href="lyhytterapia.html"><span data-lang="fi">Lyhytterapia</span><span data-lang="en">Brief therapy</span><span data-lang="sv">Korttidsterapi</span></a></li>
-          <li><a href="stressi.html"><span data-lang="fi">Stressi &amp; Työuupumus</span><span data-lang="en">Stress &amp; Burnout</span><span data-lang="sv">Stress och utbrändhet</span></a></li>
-          <li><a href="muutosturva.html"><span data-lang="fi">Muutosturva</span><span data-lang="en">Life changes</span><span data-lang="sv">Livsförändring</span></a></li>
-          <li><a href="filosofinen.html"><span data-lang="fi">Filosofinen konsultaatio</span><span data-lang="en">Philosophical consultation</span><span data-lang="sv">Filosofisk konsultation</span></a></li>
-          <li><a href="aanimalja.html"><span data-lang="fi">Äänimaljat</span><span data-lang="en">Singing bowls</span><span data-lang="sv">Sjungande skålar</span></a></li>
-        </ul>
+      <div class="footer-bottom">
+        <span
+          >© <span id="copy-year"></span> Antimaterial – Kristiina Salo</span
+        >
+        <div class="dev-brand">
+          Site by
+          <a
+            href="https://mkrapo.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="dev-link"
+            ><span class="dev-k">K</span><span class="dev-m">M</span></a
+          >
+        </div>
       </div>
-      <div class="footer-col">
-        <h4 data-lang="fi">Sivusto</h4>
-        <h4 data-lang="en">Site</h4>
-        <h4 data-lang="sv">Webbplats</h4>
-        <ul>
-          <li><a href="index.html"><span data-lang="fi">Etusivu</span><span data-lang="en">Home page</span><span data-lang="sv">Hem</span></a></li>
-          <li><a href="yhteystiedot.html"><span data-lang="fi">Ota yhteyttä</span><span data-lang="en">Contact us</span><span data-lang="sv">Kontakta oss</span></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="copy-year"></span> Antimaterial – Kristiina Salo</span>
-      <div class="dev-brand">
-        Site by <a href="https://mkrapo.dev/" target="_blank" rel="noopener noreferrer" class="dev-link"><span class="dev-k">K</span><span class="dev-m">M</span></a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="assets/js/main.js"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Antimaterial – Kristiina Salo",
+        "description": "Short-term therapy, philosophical consultation, and singing bowl treatments in Helsinki. Supporting stress, burnout, and life changes with a holistic approach.",
+        "url": "https://antimaterial.fi/",
+        "logo": "https://antimaterial.fi/assets/img/antimaterial_A_favicon.svg",
+        "image": "https://antimaterial.fi/assets/img/welcome.jpg",
+        "telephone": "+358465835188",
+        "email": "antimaterialkristiina@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Helsinki",
+          "addressCountry": "FI"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "60.1699",
+          "longitude": "24.9384"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Helsinki"
+        },
+        "currenciesAccepted": "EUR",
+        "founder": {
+          "@type": "Person",
+          "name": "Kristiina Salo",
+          "jobTitle": "Therapist and Consultant"
+        }
+      }
+    </script>
+  </body>
 </html>

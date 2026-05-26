@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://antimaterial.fi/sitemap.xml
+
+# Disallow patterns (if needed in future)
+# Disallow: /private/
+# Disallow: /admin/
