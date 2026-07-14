@@ -63,8 +63,6 @@ npx serve .
 
 Then open `http://localhost:8080`.
 
-> Don't open `index.html` directly as a `file://` URL — `localStorage` calls may throw security errors in some browsers.
-
 ## Deploying
 
 Deployed on **Cloudflare Pages** with zero build configuration:
